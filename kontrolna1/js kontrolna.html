@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kontrolna js1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h2>My test 1</h2>
+    <div class="input-group">
+        <label for="pairInput">Name/Value Pair</label>
+        <input type="text" id="pairInput" placeholder="Name=Value" />
+        <button onclick="addPair()">Add</button>
+    </div>
+    <div class="error" id="errorMessage"></div>
+
+    <label for="pairList">Name/Value Pair List</label>
+    <div class="list-button-group">
+        <select id="pairList" multiple>
+            <option>Hello=World</option>
+            <option>Happy=Coding</option>
+        </select>
+        <div class="button-group">
+            <button onclick="sortByName()">Sort by Name</button>
+            <button onclick="sortByValue()">Sort by Value</button>
+            <button onclick="deleteSelected()">Delete</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

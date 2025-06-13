@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #000000;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 60%;
+    height: 150px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100px;
+    transition: all 0.3s ease;
+    color: #333;
+    font-weight: 500;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #e0e0e0, #d0d0d0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.list-button-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .list-button-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-group {
+        align-items: stretch;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
